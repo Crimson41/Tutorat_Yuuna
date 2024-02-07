@@ -134,31 +134,24 @@ public class Tutorat_01 : MonoBehaviour
 
     #endregion
 
-    #region Création d'un jeu de rôle
+    #region Création d'un jeu de rôle - les bases
 
-    // Liste des champs utilisés pour cette partie
-    private int _health = 50;
-
-    private int _mind = 50;
-    private int _strength = 25;
-    private int _dexterity = 70;
-
-    private int _armor = 5;
-    private int _shield = 10;
-
-    private int _wyvernDamage = 50;
-    private int _goblinDamage = 5;
+    // Créer une structure Player contenant les stats suivantes sous la forme de int :
+    // health, strength, mind, dexterity, armor, shield
+    // Créer ensuite une instance de cette structure qui sera utilisée pour la suite.
 
     private void RollingDice()
     {
         // Créer une fonction pour simuler un lancé de dé classique de jdr.
         // La fonction doit retourner un string en fonction d'une réussite,
         // d'une réussite critique (5 ou moins), d'un échec ou d'un échec critique (95 ou plus).
-        // La statistique du personnage sera nécessaire en paramètre de la fonction.
         // Le chiffre obtenu aléatoirement devra être inférieur ou égal à la statistique du personnage.
 
         int random = Random.Range(1, 100);
     }
+
+    private int _wyvernDamage = 50;
+    private int _goblinDamage = 5;
 
     private void DamageCalculation()
     {
@@ -170,8 +163,8 @@ public class Tutorat_01 : MonoBehaviour
 
     private void TakeDamage()
     {
-        // Créer une fonction qui va infliger des dégâts à notre héros
-        // en fonction des dégâts passés en paramètres.
+        // Créer une fonction qui va infliger des dégâts à notre héros en fonction
+        // des dégâts passés en paramètres (la fonction DamageCalcultation peut directement être utilisée en paramètre).
         // Les points de vie ne doivent pas descendre en-dessous de 0.
     }
 

@@ -56,14 +56,82 @@ public class Tutorat_01 : MonoBehaviour
     }
     #endregion
 
-    #region Dictionnaires
-    private Dictionary<int, string> phoneBook = new();
+    #region Dictionnaires, enum et structures
+    private Dictionary<string, string> phoneBook = new();
 
     private void Dictionary()
     {
         // Créer une fonction qui va ajouter une nouvelle entrée à notre dictionnaire "phoneBook".
-        // Ensuite, elle retournera la valeur de cette nouvelle entrée.
+        // L'entrée doit être un numéro de téléphone associé à un prénom.
+        // Ensuite, elle retournera la valeur de cette nouvelle entrée (le prénom).
     }
+
+    // ----- //
+
+    enum Season { Winter, Spring, Summer, Autumn }
+    enum Month { January, February, March, April, May, June, July, August, September, October, November, December }
+
+    private Dictionary<Month, Season> months = new()
+    {
+        { Month.January, Season.Winter }, { Month.February, Season.Winter },
+        { Month.March, Season.Winter }, { Month.April, Season.Spring },
+        { Month.May, Season.Spring }, { Month.June, Season.Spring },
+        { Month.July, Season.Summer }, { Month.August, Season.Summer },
+        { Month.September, Season.Summer }, { Month.October, Season.Autumn },
+        { Month.November, Season.Autumn }, { Month.December, Season.Autumn },
+    };
+
+    private void GetSeason()
+    {
+        // Créer une fonction qui doit retourner la saison associée au mois passé en argument.
+        // Il faudra utiliser les deux enum.
+    }
+
+    // ----- //
+
+    private Dictionary<Season, List<Month>> seasons = new()
+    {
+        { Season.Winter, new List<Month> { Month.January, Month.February, Month.March } },
+        { Season.Spring, new List<Month> { Month.April, Month.May, Month.June } },
+        { Season.Summer, new List<Month> { Month.July, Month.August, Month.September } },
+        { Season.Autumn, new List<Month> { Month.October, Month.November, Month.December } }
+    };
+
+    private void GetMonths()
+    {
+        // Créer une fonction qui doit retourner les mois associés à la saison passée en paramètre.
+        // Il faudra utiliser les deux enum.
+    }
+
+    // ----- //
+
+    struct Person
+    {
+        string Name;
+        int Age;
+    }
+
+    private void AddPerson()
+    {
+        // Créer une fonction qui retourne une structure Person avec les paramètres Name et Age passés dans la fonction.
+    }
+
+    // ----- //
+
+    // Créer un enum PokemonType contenant différents types de Pokémon.
+
+    // ----- //
+
+    // Créer désormais une structure pour représenter un pokémon, et une structure pour représenter un dresseur.
+    // Le pokémon doit contenir des stats (au choix), un niveau et un type.
+    // Le dresseur doit contenir un prénom, un nombre de badge et une liste de pokémon.
+
+    private void CreateTrainer()
+    {
+        // Crée une fonction qui va créer un nouveau dresseur grâce au prénom passé en paramètre.
+        // Il n'a donc aucun badge et aucun pokémon.
+    }
+
     #endregion
 
     #region Création d'un jeu de rôle

@@ -9,7 +9,7 @@
 // Qu'est-ce que la signature d'une fonction ?
 // C'est ce qui détermine le type qu'elle renvoie, son nom et les potentiels paramètres qu'elle prends.
 // [type] [nom]([paramètres])
-// Exemple : void Test(int)
+// Exemple : void MyFunction(int)
 
 // Comment préciser l'accessibilité ?
 // En c#, on écrirait l'accessibilité ainsi : private void Test(int)
@@ -30,4 +30,9 @@ protected:
 public:
 	// Toutes les données inscrites ici seront public
 	void HelloWorld();
+
+	// Voici le constructeur de la classe. Il s'agit d'une méthode qui se lance
+	// automatiquement lorsqu'on instancie la classe.
+	// Le constructeur ne retourne rien et doit forcément avoir le même nom que la classe.
+	TutoratBasic();
 };

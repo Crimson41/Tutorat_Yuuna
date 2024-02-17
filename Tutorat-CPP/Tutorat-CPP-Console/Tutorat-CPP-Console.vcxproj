@@ -130,10 +130,22 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MyClass.cpp" />
     <ClCompile Include="TutoratBasic.cpp" />
+    <ClCompile Include="TutoratRPG.cpp" />
+    <ClCompile Include="TutoratRPG_Character.cpp" />
+    <ClCompile Include="TutoratRPG_GameManager.cpp" />
+    <ClCompile Include="TutoratRPG_Inventory.cpp" />
+    <ClCompile Include="TutoratRPG_Skill.cpp" />
+    <ClCompile Include="TutoratRPG_Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyClass.h" />
     <ClInclude Include="TutoratBasic.h" />
+    <ClInclude Include="TutoratRPG_Character.h" />
+    <ClInclude Include="TutoratRPG_GameManager.h" />
+    <ClInclude Include="TutoratRPG_Inventory.h" />
+    <ClInclude Include="TutoratRPG_Settings.h" />
+    <ClInclude Include="TutoratRPG_Skill.h" />
+    <ClInclude Include="TutoratRPG_Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

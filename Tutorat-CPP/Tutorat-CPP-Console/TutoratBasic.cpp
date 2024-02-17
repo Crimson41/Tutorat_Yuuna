@@ -47,7 +47,8 @@ TutoratBasic::TutoratBasic() // La définition du constructeur de la classe.
 
     // ----- Cas particuliers : les instances de classe -----
     // Qu'est-ce qu'une instance de classe ?
-    // Il s'agit d'une variable qui possède le type d'une classe et peut donc utiliser ses méthodes.
+    // Il s'agit d'une variable qui possède le type d'une classe. On appelle également cette variable "un objet".
+    // Une classe définie les plans de l'objet, et la variable crée l'objet à partir de ce plan.
     
     MyClass mc;
 

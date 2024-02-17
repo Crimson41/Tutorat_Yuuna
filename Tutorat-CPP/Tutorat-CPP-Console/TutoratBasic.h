@@ -2,7 +2,9 @@
 #include <iostream>
 #include <vector>
 
-// Un fichier .h contient une classe et la liste de ses champs et méthodes (fonctions)
+// Un fichier .h contient une classe et la liste de ses attributs et méthodes (fonctions)
+// Un attribut est une variable de classe - une méthode est une fonction de classe
+
 // Seule "la signature" des fonctions est présente dans un fichier .h
 // Il faudra inscrire sa "déclaration" dans le fichier .cpp (voir tuto là-bas)
 

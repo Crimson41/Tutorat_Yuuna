@@ -22,7 +22,8 @@ private:
 
 	// Création d'un vector (= liste en c#) : std::vector<[type]> [nom];
 	// Un include est nécessaire.
-	std::vector<int> _numbers;
+	std::vector<int> _numbersVector;
+	int _numbersArray[3];
 
 protected:
 	// Toutes les données inscrites ici seront protected

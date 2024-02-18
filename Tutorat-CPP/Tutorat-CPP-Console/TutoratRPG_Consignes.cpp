@@ -2,9 +2,7 @@
 // Nous allons créer un mini RPG textuel au tour par tour sur console.
 
 // ----- Settings : Enums -----
-// Nous allons créer plusieurs enum class.
-
-// Nous allons créer tous nos enums dans le fichier "TutoratRPG_Settings.h"
+// Nous allons créer plusieurs classes d'enums dans le fichier "TutoratRPG_Settings.h"
 // Il nous faudra des enum pour :
 // - La difficulté
 // - Les statistiques du personnage (HP, ATK, DEF, et toutes autres stats souhaitées)

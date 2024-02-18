@@ -39,4 +39,5 @@ public:
 	TutoratBasic();
 
 	void TestFunctionsHere();
+	void MyFunction(int);
 };

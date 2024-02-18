@@ -5,6 +5,13 @@
 // Attention, en cpp, il faut préciser le nom de la classe devant le nom de la fonction.
 // Exemple : void MyClass::MyFunction(int myParam) { [corps de la fonction] }
 
+void TutoratBasic::MyFunction(int myParam) { /* Corps de la fonction */ }
+
+// Ici, myParam est appelé un paramètre de la fonction MyFunction.
+// En revanche, lorsqu'on appelle la fonction, les variables ajoutées entre parenthèse
+// sont nommées des "arguments". On dit qu'un argument est passé en paramètre d'une fonction.
+// https://developer.mozilla.org/fr/docs/Glossary/Parameter
+
 TutoratBasic::TutoratBasic()
 {
     // La définition du constructeur de la classe.

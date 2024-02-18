@@ -71,6 +71,7 @@ TutoratAdvanced::TutoratAdvanced()
 
     // Leur utilisation est un peu plus complexe donc on ne les utilisera pas forcément tout de suite.
     // https://learn.microsoft.com/fr-fr/cpp/cpp/how-to-create-and-use-unique-ptr-instances?view=msvc-170
+    // De même, nous verrons l'initialisation d'une map plus tard.
 }
 
 void TutoratAdvanced::TestFunctionsHere()

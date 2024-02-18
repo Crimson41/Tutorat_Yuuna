@@ -51,6 +51,7 @@
 // Lorsqu'une arme est créée, elle possédera un nom aléatoire parmi une liste de nom que l'on pourra créé
 // dans la classe directement, ou dans les settings du jeu.
 // Ensuite, son taux de dégâts sera équivalent à un chiffre aléatoire entre son minimum et son maximum.
+// Nous voulons également avoir un second constructeur pour préciser nous-même le taux de dégâts.
 // Tous les attributs devront être initialisés dans le constructeur.
 
 // ----- Compétences -----
@@ -63,7 +64,7 @@
 // - Une classe à laquelle elle est liée
 
 // Afin d'implémenter l'effet d'une compétence, il faudra créer une fonction virtuelle "Use".
-// Cette fonction prendra en paramètre une liste de cible à toucher et retournera des dégâts.
+// Cette fonction prendra en paramètre une cible et retournera des dégâts.
 // Quelques idées de compétences :
 // - Inflige des dégâts équivalent à 30% de la vie de la cible
 // - Inflige des dégâts fixes + un complément de dégâts aléatoire
@@ -87,6 +88,22 @@
 // - La liste des armes
 // - La liste des potions
 
-// ----- Settings : GameManager -----
+// ----- GameManager -----
 // Dans "TutoratRPG_GameManager", il faudra stocker un array de personnage, initialisé avec un personnage de chaque classe.
 // Il faut ensuite une fonction qui vérifie si tous les personnages sont morts => game over.
+
+// C'est dans notre GameManager que nous allons créer notre boucle de jeu, le plus simple étant
+// de lancer une boucle qui persiste tant que tous les personnages ne sont pas morts.
+// À l'intérieur, il faudra d'abord lancer un combat, qui ne s'arrêtera que quand l'ennemi
+// est vaincu ou que les personnages sont morts.
+// Une fois le combat terminé, on gagne un loot aléatoire (une arme ou une potion).
+// Si c'est une arme, elle sera automatiquement équipée si elle est meilleure que l'arme du personnage éligible.
+// Puis la boucle recommence. Elle sera appelée dans la fonction main() de Main.cpp
+
+// -- Comment gérer le combat ?
+// Nous utiliserons les inputs (cin). Ce sera toujours le tour du personnage actif, puis celui de l'ennemi.
+// Le joueur pourra choisir parmi les options suivantes pendant son tour :
+// 1 - Attaquer : le joueur pourra choisir parmi une liste de ses compétences.
+// 2 - Utiliser une potion : le joueur pourra choisir parmi sa liste de potions.
+// 3 - Changer de personnage : le joueur pourra choisir parmi ses personnages encore vivants.
+// Si l'input est incorrect, le joueur doit de nouveau en entrer un.

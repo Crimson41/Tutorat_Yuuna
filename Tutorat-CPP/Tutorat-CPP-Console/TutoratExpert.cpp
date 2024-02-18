@@ -116,4 +116,4 @@ void MyFunction()
 // L'objectif est le suivant : stocker tous les Pokemon du dresseur, regroupés par élément, dans la map.
 
 // ----- EXERCICES : CLASSES -----
-// Héritage, polymorphisme, liste d'objet
+// Héritage, polymorphisme, liste d'objet, plusieurs constructeurs

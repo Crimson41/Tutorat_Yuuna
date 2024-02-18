@@ -2,22 +2,7 @@
 // Nous allons créer un mini RPG textuel au tour par tour sur console.
 
 // ----- Settings : Enums -----
-// https://www.w3schools.com/c/c_enums.php
-// Nous allons créer plusieurs enum class. Les enum doivent être déclarés en dehors d'une classe.
-// -- Attention : les enum class sont un peu particuliers par rapport aux enum classiques.
-// Il faut rajouter le mot-clé "class" et préciser le nom de l'enum devant la valeur utilisée.
-// Voici à quoi ressemble leur utilisation :
-
-enum TutoColor { BLUE, RED, YELLOW }; // Enum classique
-enum class TutoElement { FIRE, WATER, AIR }; // Classe enum
-
-void MyFunction()
-{
-	TutoColor c = BLUE;
-	TutoElement e = TutoElement::FIRE;
-}
-
-// Une classe d'enum est plus sécurisée à utiliser.
+// Nous allons créer plusieurs enum class.
 
 // Nous allons créer tous nos enums dans le fichier "TutoratRPG_Settings.h"
 // Il nous faudra des enum pour :

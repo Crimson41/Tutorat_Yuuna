@@ -5,40 +5,43 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="2 - Tutorat RPG">
-      <UniqueIdentifier>{105b0af5-4186-42fb-8e6d-7b50644c5b15}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2 - Tutorat RPG\Fichiers d%27en-tête">
-      <UniqueIdentifier>{f1978144-85b0-48ce-b1aa-257a8d2ba800}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2 - Tutorat RPG\Fichiers sources">
-      <UniqueIdentifier>{86af054f-69eb-4e08-868d-562d307e147e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2 - Tutorat avancé">
       <UniqueIdentifier>{d5811599-e6e0-4db4-bd29-2f6caa20e112}</UniqueIdentifier>
     </Filter>
     <Filter Include="1 - Tutorat basique">
       <UniqueIdentifier>{147ef3e8-fe49-460b-b9fb-493f5abda63a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3 - Tutorat expert">
+      <UniqueIdentifier>{ce8784d0-99b3-4ffc-90cd-c628e38004fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4 - Tutorat RPG">
+      <UniqueIdentifier>{105b0af5-4186-42fb-8e6d-7b50644c5b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4 - Tutorat RPG\Fichiers d%27en-tête">
+      <UniqueIdentifier>{f1978144-85b0-48ce-b1aa-257a8d2ba800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4 - Tutorat RPG\Fichiers sources">
+      <UniqueIdentifier>{86af054f-69eb-4e08-868d-562d307e147e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TutoratRPG_Character.cpp">
-      <Filter>2 - Tutorat RPG\Fichiers sources</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="TutoratRPG_GameManager.cpp">
-      <Filter>2 - Tutorat RPG\Fichiers sources</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="TutoratRPG_Inventory.cpp">
-      <Filter>2 - Tutorat RPG\Fichiers sources</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="TutoratRPG_Skill.cpp">
-      <Filter>2 - Tutorat RPG\Fichiers sources</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="TutoratRPG_Weapon.cpp">
-      <Filter>2 - Tutorat RPG\Fichiers sources</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="TutoratRPG_Consignes.cpp">
-      <Filter>2 - Tutorat RPG</Filter>
+      <Filter>4 - Tutorat RPG</Filter>
     </ClCompile>
     <ClCompile Include="TutoratBasic.cpp">
       <Filter>1 - Tutorat basique</Filter>
@@ -52,25 +55,28 @@
     <ClCompile Include="MyClass.cpp">
       <Filter>2 - Tutorat avancé</Filter>
     </ClCompile>
+    <ClCompile Include="TutoratExpert.cpp">
+      <Filter>3 - Tutorat expert</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TutoratRPG_Character.h">
-      <Filter>2 - Tutorat RPG\Fichiers d%27en-tête</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_GameManager.h">
-      <Filter>2 - Tutorat RPG\Fichiers d%27en-tête</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_Inventory.h">
-      <Filter>2 - Tutorat RPG\Fichiers d%27en-tête</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_Settings.h">
-      <Filter>2 - Tutorat RPG\Fichiers d%27en-tête</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_Skill.h">
-      <Filter>2 - Tutorat RPG\Fichiers d%27en-tête</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_Weapon.h">
-      <Filter>2 - Tutorat RPG\Fichiers d%27en-tête</Filter>
+      <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratBasic.h">
       <Filter>1 - Tutorat basique</Filter>
@@ -83,6 +89,9 @@
     </ClInclude>
     <ClInclude Include="MyClass.h">
       <Filter>2 - Tutorat avancé</Filter>
+    </ClInclude>
+    <ClInclude Include="TutoratExpert.h">
+      <Filter>3 - Tutorat expert</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

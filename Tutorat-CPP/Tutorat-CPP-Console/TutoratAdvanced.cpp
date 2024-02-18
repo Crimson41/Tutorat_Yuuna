@@ -113,7 +113,7 @@ void TutoratAdvanced::TestFunctionsHere()
 // https://www.w3schools.com/cpp/cpp_while_loop.asp
 // https://www.w3schools.com/cpp/cpp_do_while_loop.asp
 
-// -- Créer une fonction qui prends un vector de int en paramètre, puis affiche la valeur de tous ses éléments.
+// -- Créer une fonction qui prends un array de int en paramètre, puis affiche la valeur de tous ses éléments.
 
 // -- Refaire la même fonction que précédemment, mais cette fois-ci, deux conditions :
 // - chaque élément doit augmenter sa valeur de 1 puis être affiché dans la console.
@@ -122,6 +122,8 @@ void TutoratAdvanced::TestFunctionsHere()
 // https://www.w3schools.com/cpp/cpp_break.asp
 
 // -- Créer une fonction qui prends un array de int en paramètre et en retourne sa moyenne.
+
+// -- Créer une fonction qui prends un array de int en paramètre et augmente la valeur de chacun de ses éléments par 2.
 
 // -- Créer deux fonctions qui prennent un vector de int en paramètre, et qui s'arrêtent pour retourner le premier chiffre 4 qui existe.
 // Sinon, elles retournent -1.

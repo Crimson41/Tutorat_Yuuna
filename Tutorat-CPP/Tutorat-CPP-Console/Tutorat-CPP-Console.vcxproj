@@ -131,6 +131,7 @@
     <ClCompile Include="MyClass.cpp" />
     <ClCompile Include="TutoratAdvanced.cpp" />
     <ClCompile Include="TutoratBasic.cpp" />
+    <ClCompile Include="TutoratExpert.cpp" />
     <ClCompile Include="TutoratRPG_Consignes.cpp" />
     <ClCompile Include="TutoratRPG_Character.cpp" />
     <ClCompile Include="TutoratRPG_GameManager.cpp" />
@@ -143,6 +144,7 @@
     <ClInclude Include="MyClass.h" />
     <ClInclude Include="TutoratAdvanced.h" />
     <ClInclude Include="TutoratBasic.h" />
+    <ClInclude Include="TutoratExpert.h" />
     <ClInclude Include="TutoratRPG_Character.h" />
     <ClInclude Include="TutoratRPG_GameManager.h" />
     <ClInclude Include="TutoratRPG_Inventory.h" />

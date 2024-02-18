@@ -34,6 +34,12 @@ void TutoratBasic::TestFunctionsHere()
 // -- Créer une fonction qui prends un int en paramètre. Si le int est égal à 2, on arrête tout et on retourne -1.
 // Sinon, on lui ajoute 10 puis on le divise par 2 et on retourne le résultat.
 
+// -- Reprenons la toute première fonction créée dans cette section pour créer une fonction surchargée qui va additionner
+// deux float passés en paramètre. Ainsi, nous pourrons appeler la même fonction, que ce soit pour des int ou des float.
+// https://www.w3schools.com/cpp/cpp_function_overloading.asp
+
+// -- Créer une fonction qui prends un int en paramètre et l'incrémente de 1. Tant que ce int n'est pas égal ou supérieur à 10, la fonction est relancée.
+
 // ----- EXERCICES : STRINGS -----
 
 // -- Créer une fonction qui prends un string en paramètre, et en retourne un string composé du paramètre précédé de "Hello ".

@@ -111,4 +111,9 @@ void MyFunction()
 // -- Créer une fonction qui va créer un nouveau Dresseur. Le nom et le sexe seront passés en paramètre.
 // Il faudra utiliser la fonction précédente pour créer une équipe de six pokemon à ce dresseur.
 
+// -- Créer une fonction qui va créer une map prenant un élement en clé et une liste de Pokémon en valeur.
+// Cette fonction aura un dresseur.
+// L'objectif est le suivant : stocker tous les Pokemon du dresseur, regroupés par élément, dans la map.
+
 // ----- EXERCICES : CLASSES -----
+// Héritage, polymorphisme, liste d'objet

@@ -58,6 +58,7 @@
     <ClCompile Include="TutoratExpert.cpp">
       <Filter>3 - Tutorat expert</Filter>
     </ClCompile>
+    <ClCompile Include="TutoratRPG_Potion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TutoratRPG_Character.h">
@@ -93,5 +94,6 @@
     <ClInclude Include="TutoratExpert.h">
       <Filter>3 - Tutorat expert</Filter>
     </ClInclude>
+    <ClInclude Include="TutoratRPG_Potion.h" />
   </ItemGroup>
 </Project>

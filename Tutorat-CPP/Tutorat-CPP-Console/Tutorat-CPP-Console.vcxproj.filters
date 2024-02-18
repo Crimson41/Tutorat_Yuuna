@@ -13,60 +13,81 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="TutoratRPG">
+      <UniqueIdentifier>{105b0af5-4186-42fb-8e6d-7b50644c5b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TutoratRPG\Fichiers d%27en-tête">
+      <UniqueIdentifier>{f1978144-85b0-48ce-b1aa-257a8d2ba800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TutoratRPG\Fichiers sources">
+      <UniqueIdentifier>{86af054f-69eb-4e08-868d-562d307e147e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorats">
+      <UniqueIdentifier>{147ef3e8-fe49-460b-b9fb-493f5abda63a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="TutoratBasic.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="MyClass.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="TutoratRPG_Character.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="TutoratRPG_Inventory.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="TutoratRPG_Weapon.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="TutoratRPG_Skill.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>TutoratRPG\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="TutoratRPG_GameManager.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>TutoratRPG\Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="TutoratRPG.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="TutoratRPG_Inventory.cpp">
+      <Filter>TutoratRPG\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="TutoratRPG_Skill.cpp">
+      <Filter>TutoratRPG\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="TutoratRPG_Weapon.cpp">
+      <Filter>TutoratRPG\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="TutoratRPG_Consignes.cpp">
+      <Filter>TutoratRPG</Filter>
+    </ClCompile>
+    <ClCompile Include="TutoratAdvanced.cpp">
+      <Filter>Tutorats</Filter>
+    </ClCompile>
+    <ClCompile Include="TutoratBasic.cpp">
+      <Filter>Tutorats</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TutoratBasic.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="MyClass.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="Dependencies.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
     <ClInclude Include="TutoratRPG_Character.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="TutoratRPG_Inventory.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="TutoratRPG_Weapon.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="TutoratRPG_Skill.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>TutoratRPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_GameManager.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>TutoratRPG\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="TutoratRPG_Inventory.h">
+      <Filter>TutoratRPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_Settings.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>TutoratRPG\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="TutoratRPG_Skill.h">
+      <Filter>TutoratRPG\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="TutoratRPG_Weapon.h">
+      <Filter>TutoratRPG\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="TutoratAdvanced.h">
+      <Filter>Tutorats</Filter>
+    </ClInclude>
+    <ClInclude Include="TutoratBasic.h">
+      <Filter>Tutorats</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

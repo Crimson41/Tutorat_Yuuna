@@ -46,6 +46,7 @@ void TutoratBasic::TestFunctionsHere()
 // https://www.w3schools.com/cpp/cpp_function_overloading.asp
 
 // -- Créer une fonction qui prends un int en paramètre et l'incrémente de 1. Tant que ce int n'est pas égal ou supérieur à 10, la fonction est relancée.
+// C'est ce que l'on appelle une fonction récursive.
 
 // ----- EXERCICES : STRINGS -----
 
@@ -58,3 +59,6 @@ void TutoratBasic::TestFunctionsHere()
 
 // -- Créer une fonction qui prends un string en paramètre, et en retourne sa première lettre.
 // https://www.w3schools.com/cpp/cpp_strings_access.asp
+
+// -- Créer une fonction qui prends un string en paramètre, échange sa première et dernière lettre puis retourne le résultat.
+// Pour obtenir la dernière lettre d'un string, le plus simple est d'utiliser sa longueur.

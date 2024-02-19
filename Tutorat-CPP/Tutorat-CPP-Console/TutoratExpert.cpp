@@ -74,8 +74,11 @@ enum class TutoElement { FIRE, WATER, AIR }; // Classe enum
 
 void MyFunction()
 {
-	TutoColor c = BLUE;
-	TutoElement e = TutoElement::FIRE;
+	TutoColor c = BLUE; //OK
+	c = TutoColor::RED; //Toujours OK
+
+	//TutoElement e = FIRE; //Pas OK
+	TutoElement e = TutoElement::FIRE; //OK
 }
 
 // -- Créer une fonction qui prends un enum de type "Seasons" créé précédement en paramètre.
@@ -117,3 +120,30 @@ void MyFunction()
 
 // ----- EXERCICES : CLASSES -----
 // Héritage, polymorphisme, liste d'objet, plusieurs constructeurs
+
+// -- Créer une classe "TutoratExpert_Song". Elle devra contenir :
+// - un titre (string)
+// - un interprète (string)
+// - une année (int)
+// - un genre (enum)
+// https://www.w3schools.com/cpp/cpp_classes.asp
+
+// -- Créer un constructeur pour la classe "TutoratExpert_Song".
+
+// -- Créer une instance de la classe "TutoratExpert_Song" avec une chanson au choix depuis la classe "TutoratExpert".
+// Ne pas oublier les include.
+
+// Créer une classe "TutoratExpert_Animal". Elle devra contenir :
+// - un nom (string)
+// - une classification (enum) [mammifère, oiseau, poisson, reptile]
+// - un nombre de pattes (int)
+
+// -- Créer un constructeur pour la classe "TutoratExpert_Animal".
+
+// -- Créer une classe "TutoratExpert_Dog" qui hérite de la classe "TutoratExpert_Animal".
+
+// -- Créer un constructeur pour la classe "TutoratExpert_Dog".
+
+// -- Rendre la classe "TutoratExpert_Animal" abstraite.
+
+// -- Ajouter une fonction abstraite "MakeSound" à "TutoratExpert_Animal", qui retourne un string du son de l'animal.

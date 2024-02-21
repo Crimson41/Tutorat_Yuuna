@@ -39,6 +39,7 @@ public:
 	TutoratBasic();
 
 	void TestFunctionsHere();
+	void UseConsole();
 	void MyFunction(int);
 	int Addition(int, int);
 	int Multiply(int, int);

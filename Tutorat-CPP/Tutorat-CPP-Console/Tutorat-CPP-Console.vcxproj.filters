@@ -31,9 +31,6 @@
     <ClCompile Include="TutoratRPG_GameManager.cpp">
       <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="TutoratRPG_Inventory.cpp">
-      <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="TutoratRPG_Skill.cpp">
       <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
     </ClCompile>
@@ -58,16 +55,15 @@
     <ClCompile Include="TutoratExpert.cpp">
       <Filter>3 - Tutorat expert</Filter>
     </ClCompile>
-    <ClCompile Include="TutoratRPG_Potion.cpp" />
+    <ClCompile Include="TutoratRPG_Potion.cpp">
+      <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TutoratRPG_Character.h">
       <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_GameManager.h">
-      <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="TutoratRPG_Inventory.h">
       <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TutoratRPG_Settings.h">
@@ -94,6 +90,8 @@
     <ClInclude Include="TutoratExpert.h">
       <Filter>3 - Tutorat expert</Filter>
     </ClInclude>
-    <ClInclude Include="TutoratRPG_Potion.h" />
+    <ClInclude Include="TutoratRPG_Potion.h">
+      <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

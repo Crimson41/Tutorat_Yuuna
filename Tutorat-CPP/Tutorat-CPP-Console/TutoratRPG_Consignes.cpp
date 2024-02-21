@@ -93,49 +93,7 @@
 // du jeu et définir les stats des ennemis.
 
 // -- Création d'un singleton
-// Un singleton est une classe qui ne peut être instanciée que par elle-même.
-// De ce fait, son constructeur est rendu privé.
-// Elle possède un pointeur statique contenant une instance d'elle-même,
-// qui est accessible grâce à une fonction elle aussi statique.
-// Dans cette fonction, on vérifie que l'instance existe - sinon, on en crée une nouvelle.
-// Enfin, on retourne l'instance du singleton.
-
-// Fichier .h
-class MySingleton
-{
-private:
-	// On rends le constructeur de la classe privé.
-	MySingleton();
-
-	// Notre instance est un pointeur statique.
-	static MySingleton* _instance;
-
-public:
-	// Cette fonction vérifie si une instance existe, en crée une si besoin, puis la retourne.
-	static MySingleton* Instance();
-
-	// Une fonction que l'on souhaite rendre accessible
-	void MySingletonFunction();
-};
-
-// Fichier .cpp
-// Ici, on doit initialiser notre pointeur comme étant null.
-MySingleton* MySingleton::_instance = nullptr;
-
-MySingleton* MySingleton::Instance()
-{
-	if (_instance == nullptr) _instance = new MySingleton();
-	return _instance;
-}
-
-void MySingleton::MySingletonFunction() { };
-
-// Il est désormais possible d'accéder aux informations de notre singleton comme suit :
-void SingletonExample()
-{
-	MySingleton* mySingleton = MySingleton::Instance();
-	mySingleton->MySingletonFunction();
-}
+// Voir fichiers Singleton.h et Singleton.cpp
 
 // -- Initialisation de la partie
 // Dans "TutoratRPG_GameManager", il faudra stocker un array de personnage, initialisé avec un personnage de chaque classe.

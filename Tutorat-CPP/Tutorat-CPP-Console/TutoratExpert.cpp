@@ -34,6 +34,11 @@ TutoratExpert::TutoratExpert()
 	};
 }
 
+TutoratExpert::TutoratExpert(int test)
+{
+	_test = test;
+}
+
 void TutoratExpert::TestFunctionsHere()
 {
     // Utiliser cette fonction pour tester les exercices.
@@ -119,7 +124,6 @@ void MyFunction()
 // L'objectif est le suivant : stocker tous les Pokemon du dresseur, regroupés par élément, dans la map.
 
 // ----- EXERCICES : CLASSES -----
-// Héritage, polymorphisme, liste d'objet, plusieurs constructeurs
 
 // -- Créer une classe "TutoratExpert_Song". Elle devra contenir :
 // - un titre (string)
@@ -139,11 +143,94 @@ void MyFunction()
 // - un nombre de pattes (int)
 
 // -- Créer un constructeur pour la classe "TutoratExpert_Animal".
+// Il est impossible de créer un animal par défaut, nous aurons donc besoin
+// d'avoir notre nom, classification et nombre de pattes passés en paramètre de notre constructeur.
 
-// -- Créer une classe "TutoratExpert_Dog" qui hérite de la classe "TutoratExpert_Animal".
+// Fichier .h
+class MyParent
+{
+public:
+	int _var1;
+	int _var2;
+	int _var3;
 
-// -- Créer un constructeur pour la classe "TutoratExpert_Dog".
+	MyParent(int, int, int); // Constructeur
+};
 
-// -- Rendre la classe "TutoratExpert_Animal" abstraite.
+// Fichier .cpp
+MyParent::MyParent(int var1, int var2, int var3)
+{
+	_var1 = var1;
+	_var2 = var2;
+	_var3 = var3;
+}
 
-// -- Ajouter une fonction abstraite "MakeSound" à "TutoratExpert_Animal", qui retourne un string du son de l'animal.
+// -- Créer les classes "TutoratExpert_Dog" et "TutoratExpert_Snake" qui héritent de la classe "TutoratExpert_Animal".
+// En c++, on déclare un enfant ainsi :
+// class MyChild : public MyParent
+// En c#, c'est la même écriture, sans le "public".
+
+// -- Créer un constructeur pour les classes "TutoratExpert_Dog" et "TutoratExpert_Snake".
+// Cette fois-ci, il est possible de définir par défaut la classification et le nombre de
+// pattes de notre chien et de notre serpent,
+// nous n'avons donc besoin que d'un paramètre dans notre constructeur pour le nom.
+// Il est possible d'utiliser le constructeur d'un parent depuis un enfant afin d'éviter
+// de répéter notre code. Dans notre exemple, le constructeur du parent prends trois éléments
+// en paramètre, donc nous devons lui en envoyer trois également.
+// Mais comme dit plus haut, nos enfants ne prendront qu'un seul élément en paramètre.
+// Voici comment faire :
+
+// Fichier .h
+class MyChild : public MyParent
+{
+public:
+	MyChild(int); // Constructeur
+};
+
+// Fichier .cpp
+// On envoie les valeurs par défaut de l'enfant pour les deux autres paramètres du constructeur du parent
+MyChild::MyChild(int var1) : MyParent(var1, 1, 1) { };
+
+// -- Créer un second constructeur pour "TutoratExpert_Dog".
+// Par défaut, nous créons toujours un chien avec 4 pattes. Mais imaginons que notre chien n'en possède que 2 ou 3 ?
+// Il nous faut un second constructeur qui prends le nombre de pattes en paramètre en plus du nom.
+// Il est possible de créer un second constructeur de la même façon qu'une fonction surchargée.
+// Il faudra bien envoyer les arguments dans le bon ordre vers le constructeur du parent.
+
+// Note : il est souvent utile d'avoir un constructeur par défaut qui ne prends aucun paramètre (= valeurs par défaut)
+// ainsi qu'un second constructeur qui pourra personnaliser les données de notre classe dès sa création.
+// Cela permet par exemple de créer des classes par défaut que l'on peut modifier par la suite si nécessaire.
+
+// -- Créer la fonction virtuelle "MakeSound" dans "TutoratExpert_Animal",
+// qui sera override dans "TutoratExpert_Dog" et qui devra retourner un string du son de l'animal.
+// En c++, il n'existe pas de mot-clé "override". Dans la classe enfant,
+// il n'est donc pas nécessaire de préciser de mot-clé tant que la signature de la
+// fonction est identique à celle du parent.
+// Fichier .h du parent : virtual void Test();
+// Fichier .h de l'enfant : void Test();
+
+// -- Rendre la classe "TutoratExpert_Animal" abstraite grâce à la fonction "MakeSound".
+// En c++, il n'existe pas de mot-clé "abstract". Pour rendre une classe abstraite,
+// il faut créer ce que l'on appelle une fonction "pure virtual".
+// En reprenant notre example plus haut, il suffit de modifier la signature de la fonction du parent ainsi :
+// virtual void Test() = 0;
+// Ainsi, "Test" devient une fonction virtuelle pure et rends automatiquement la classe parent abstraite.
+
+// Rappel :
+// - une classe abstraite ne peut pas être instanciée (= on ne peut pas créer d'objet avec).
+// - une fonction virtuelle peut être override ou non dans les classes enfants.
+// => utile quand on veut un effet par défaut qui peut potentiellement être modifié.
+// - une fonction virtuelle pure (= abstraite) doit obligatoirement être override dans les classes enfants.
+// => utile quand on veut pouvoir définir un effet différent dans chaque enfant, mais que l'on souhaite pouvoir manipuler
+// cette fonction depuis le type du parent. On va utiliser ce cas dans les prochains exercices.
+
+// -- Créer un objet "TutoratExpert_Dog" et un objet "TutoratExpert_Snake",
+// puis créer une seule liste qui contiendra ces deux objets.
+
+// Indice :
+// Il n'est pas possible de dire que "TutoratExpert_Dog" == "TutoratExpert_Snake".
+// En revanche, il est possible de dire que "TutoratExpert_Dog" == "TutoratExpert_Animal".
+// Nous pouvons donc manipuler des objets enfants grâce au type du parent.
+
+// -- Créer une fonction qui appellera la fonction "MakeSound" de tous les objets contenus
+// dans la liste créée précédemment.

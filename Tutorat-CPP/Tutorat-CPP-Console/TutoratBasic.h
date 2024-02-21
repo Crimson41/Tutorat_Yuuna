@@ -40,4 +40,21 @@ public:
 
 	void TestFunctionsHere();
 	void MyFunction(int);
+	int Addition(int, int);
+	int Multiply(int, int);
+	int Add10(int);
+	int Add5and6(int, int);
+	bool MoreOrLess10(int);
+	bool EqualOrNot10(int);
+	int Equal2(int);
+	float Addition(float, float);
+	void Incremente(int);
+
+	std::string Hello(std::string);
+	int Length(std::string);
+	bool MoreOrLess8(std::string);
+	char FirstLetter(std::string);
+
+	std::string Swap(std::string);
+
 };

@@ -21,14 +21,6 @@ void TutoratBasic::TestFunctionsHere()
 {
     // Utiliser cette fonction pour tester les exercices.
 
-    //std::cout << Addition(1, 2) << std::endl;
-
-    std::cout << Hello("gougou") << std::endl;
-    std::cout << Length("pipou") << std::endl;
-    std::cout << MoreOrLess8("lkshflcnjgjelclwns") << std::endl;
-    std::cout << FirstLetter("lkshflcnjgjelclwns") << std::endl;
-    std::cout << Swap("ABC") << std::endl;
-
 
 }
 

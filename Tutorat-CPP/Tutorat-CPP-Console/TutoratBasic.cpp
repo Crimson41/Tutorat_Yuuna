@@ -90,10 +90,20 @@ void TutoratBasic::UseConsole()
 // -- Créer une fonction qui prends un string en paramètre, et en retourne sa longueur.
 // https://www.w3schools.com/cpp/cpp_strings_length.asp
 
-// -- Créer une fonction qui prends un string en paramètre, et retourne si oui ou non sa longuer est supérieure à 8.
+// -- Créer une fonction qui prends un string en paramètre, et retourne un bool si oui ou non sa longueur est supérieure à 8.
 
 // -- Créer une fonction qui prends un string en paramètre, et en retourne sa première lettre.
 // https://www.w3schools.com/cpp/cpp_strings_access.asp
 
+// Note : un string est en réalité un array de char. Il est donc possible de manipuler un string
+// en se déplaçant d'index en index.
+void StringArray()
+{
+    std::string hello = "Hello";
+    char c = hello[3];
+    hello[0] = 'A';
+}
+
 // -- Créer une fonction qui prends un string en paramètre, échange sa première et dernière lettre puis retourne le résultat.
 // Pour obtenir la dernière lettre d'un string, le plus simple est d'utiliser sa longueur.
+// La dernière lettre d'un string est équivalent à sa longueur - 1.

@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MyClass.cpp" />
+    <ClCompile Include="Singleton.cpp" />
     <ClCompile Include="TutoratAdvanced.cpp" />
     <ClCompile Include="TutoratBasic.cpp" />
     <ClCompile Include="TutoratExpert.cpp" />
@@ -142,6 +143,7 @@
   <ItemGroup>
     <ClInclude Include="Dependencies.h" />
     <ClInclude Include="MyClass.h" />
+    <ClInclude Include="Singleton.h" />
     <ClInclude Include="TutoratAdvanced.h" />
     <ClInclude Include="TutoratBasic.h" />
     <ClInclude Include="TutoratExpert.h" />

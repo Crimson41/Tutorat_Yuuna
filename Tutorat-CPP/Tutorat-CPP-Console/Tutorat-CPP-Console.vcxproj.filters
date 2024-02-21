@@ -58,6 +58,9 @@
     <ClCompile Include="TutoratRPG_Potion.cpp">
       <Filter>4 - Tutorat RPG\Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>4 - Tutorat RPG</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TutoratRPG_Character.h">
@@ -92,6 +95,9 @@
     </ClInclude>
     <ClInclude Include="TutoratRPG_Potion.h">
       <Filter>4 - Tutorat RPG\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>4 - Tutorat RPG</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

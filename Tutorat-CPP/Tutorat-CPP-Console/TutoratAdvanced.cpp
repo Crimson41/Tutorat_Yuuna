@@ -37,13 +37,12 @@ TutoratAdvanced::TutoratAdvanced()
 
     // ----- Cas particuliers : les instances de classe -----
     // Qu'est-ce qu'une instance de classe ?
-    // Il s'agit d'une variable dont le type est le nom de notre classe. On appelle également cette variable "un objet".
+    // Il s'agit d'une variable dont le type est le nom de notre classe.
+    
+    MyClass mc; // mc est une instance de la classe MyClass.
+
+    // On appelle également cette variable "un objet".
     // Une classe définie les plans de l'objet, et la variable crée l'objet à partir de ce plan.
-
-    MyClass mc;
-
-    // mc est une instance de la classe MyClass.
-    // On peut donc utiliser ses fonctions.
 
     mc.MyFunction();
 

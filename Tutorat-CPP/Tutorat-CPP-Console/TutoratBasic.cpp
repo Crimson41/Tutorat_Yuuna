@@ -34,9 +34,9 @@ void TutoratBasic::TestFunctionsHere()
 // Il est possible de déclarer plusieurs variables du même type sur une seule ligne.
 // https://www.w3schools.com/cpp/cpp_variables_multiple.asp
 
-// -- Créer une fonction qui prends un int en paramètre, et retourne si oui ou non ce int est strictement inférieur à 10.
+// -- Créer une fonction qui prends un int en paramètre, et retourne un bool si oui ou non ce int est strictement inférieur à 10.
 
-// -- Créer une fonction qui prends un int en paramètre, et retourne si oui ou non ce int est égal 10.
+// -- Créer une fonction qui prends un int en paramètre, et retourne un bool si oui ou non ce int est égal 10.
 
 // -- Créer une fonction qui prends un int en paramètre. Si le int est égal à 2, on arrête tout et on retourne -1.
 // Sinon, on lui ajoute 10 puis on le divise par 2 et on retourne le résultat.
@@ -45,8 +45,10 @@ void TutoratBasic::TestFunctionsHere()
 // deux float passés en paramètre. Ainsi, nous pourrons appeler la même fonction, que ce soit pour des int ou des float.
 // https://www.w3schools.com/cpp/cpp_function_overloading.asp
 
-// -- Créer une fonction qui prends un int en paramètre et l'incrémente de 1. Tant que ce int n'est pas égal ou supérieur à 10, la fonction est relancée.
+// -- Créer une fonction qui prends un int en paramètre et l'incrémente de 1.
+// Ensuite, tant que ce int n'est pas égal ou supérieur à 10, la fonction est relancée.
 // C'est ce que l'on appelle une fonction récursive.
+// https://www.programiz.com/cpp-programming/recursion
 
 // ----- EXERCICES : STRINGS -----
 

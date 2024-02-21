@@ -22,6 +22,39 @@ void TutoratBasic::TestFunctionsHere()
     // Utiliser cette fonction pour tester les exercices.
 }
 
+// ----- UTILISER LA CONSOLE -----
+void TutoratBasic::UseConsole()
+{
+    // -- Pour tester cette fonction, appelle-la dans TestFunctionsHere().
+
+    // En c++, il existe deux moyens d'afficher des informations dans la console.
+    // Le plus simple est d'utiliser std::cout.
+
+    std::cout << "Hello World" << std::endl;
+
+    // Le std::endl permet de retourner à la ligne.
+
+    // Il est également possible d'utiliser printf. Ici, c'est le "\n" qui permet de retourner à la ligne.
+
+    printf("Hello World\n");
+
+    // La particularité du printf est qu'il peut afficher des variables où on le souhaite dans le string.
+    // Par défaut, il doit forcément prendre un string en paramètre.
+
+    printf("My int variable : %i\n", 10);
+    printf("My first int variable : %i, and my second : %i\n", 10, 20);
+
+    // https://cplusplus.com/reference/cstdio/printf/
+
+    // Il est possible de prendre les inputs utilisateurs grâce à std::cin.
+    // Le programme s'arrête tant que l'utilisateur n'a pas entré d'input.
+    // On stocke l'input dans une variable créée précédemment.
+
+    std::string input;
+    std::cin >> input;
+    std::cout << "You typed : " << input << std::endl;
+}
+
 // ----- EXERCICES : MATHS BASIQUES -----
 // 
 // -- Créer une fonction qui prends deux int en paramètres, les additionne et retourne le résultat.

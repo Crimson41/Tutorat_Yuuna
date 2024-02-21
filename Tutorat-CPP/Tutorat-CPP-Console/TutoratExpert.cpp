@@ -34,11 +34,6 @@ TutoratExpert::TutoratExpert()
 	};
 }
 
-TutoratExpert::TutoratExpert(int test)
-{
-	_test = test;
-}
-
 void TutoratExpert::TestFunctionsHere()
 {
     // Utiliser cette fonction pour tester les exercices.

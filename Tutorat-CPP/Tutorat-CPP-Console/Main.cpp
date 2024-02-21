@@ -12,6 +12,7 @@ int main()
 
     tb.TestFunctionsHere();
     ta.TestFunctionsHere();
+    te.TestFunctionsHere();
 
     std::cout << "\n********************\nFin du programme\n********************";
 }

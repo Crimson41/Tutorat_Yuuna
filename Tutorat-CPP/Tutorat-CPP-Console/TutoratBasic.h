@@ -39,5 +39,6 @@ public:
 	TutoratBasic();
 
 	void TestFunctionsHere();
+	void UseConsole();
 	void MyFunction(int);
 };

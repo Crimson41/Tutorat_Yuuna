@@ -76,7 +76,12 @@ TutoratAdvanced::TutoratAdvanced()
 void TutoratAdvanced::TestFunctionsHere()
 {
     // Utiliser cette fonction pour tester les exercices.
+
+    std::cout << FirstArray(3, 2, 3) << std::endl;
+
 }
+
+
 
 // ----- EXERCICES : ARRAY -----
 
@@ -84,9 +89,19 @@ void TutoratAdvanced::TestFunctionsHere()
 // Elle retourne ensuite le premier élément du tableau.
 // https://www.w3schools.com/cpp/cpp_arrays.asp
 
+int TutoratAdvanced::FirstArray(int a, int b, int c)
+{
+
+    int simpleArray[3] = { a, b, c };
+
+    return simpleArray[0];
+}
+
 // Pour la suite : utiliser l'array _numbersArray.
 
 // -- Créer une fonction qui prends un array de int en paramètre et en retourne sa longueur (nombre d'éléments à l'intérieur).
+
+
 
 // -- Créer une fonction qui prends un array de int en paramètre et en retourne le dernier élément.
 // Indice : le dernier élément se trouvera à l'index équivalent à la taille de l'array - 1.

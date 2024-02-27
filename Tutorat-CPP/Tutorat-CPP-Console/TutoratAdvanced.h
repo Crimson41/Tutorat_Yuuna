@@ -15,4 +15,8 @@ public:
 	TutoratAdvanced();
 
 	void TestFunctionsHere();
+
+	int FirstArray(int, int, int);
+	//int LengthArray(array <int,10>);
+
 };
